@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-light">
+      <div class="container-fluid">
+        <nav class="navbar bg-light">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+              <img src="img1.jpg" alt="" width="30" height="24" class="d-inline-block align-text-top" style="margin-right: 15px;">
+              COMPACT GYAN
+            </a>
+          </div>
+        </nav>
+        <div class="d-flex" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="https://www.360xrlab.com/">AR</a>
+            </li>
+            
+            <li class="nav-item">
+              <a class="nav-link active" href="contactus.html">Contact us</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+
+
+      <div>
+        <img src="" id="image" height="600px" width="100%">
+      </div>
+
+      <div>
+        <img src="bar-min.jpg" width="100%" >
+      </div>
+
+      <div class="container">                 
+        <div class="row">
+          <div class="col">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/cJhpNmQvocg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+          <div class="col">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/6MBpw-KXVBA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <img src="AUGMENTEDREALITY_ELEPHANT_360XRLAB-min.jpg">
+          </div>
+          <div class="col">
+            <img src="image3.jfif" height="80%" width="80%">
+          </div>
+          <div class="col">
+            <img src="augmentedreality_kangaro-1.png">
+          </div>
+        </div>
+      </div>
+
+      <center>
+
+      <footer style="background-color: black; color: white; text-decoration: none;">
+        © 2022 COMPACT GYAN  <br>   COMPACTGYAN PVT. LTD.  <br> <a href="https://wordpress.org/"  style="text-decoration: none; color: white;">Powered by WordPress</a>      
+      </footer>
+
+    </center>
+
+
+
+
+      <script type="text/javascript">
+        let image=document.getElementById('image');
+        let images=['image4.jfif','image5.jfif','image6.jfif','image3.jfif','image2.jfif']
+        setInterval(function(){
+          let random=Math.floor(Math.random()*5);
+          image.src=images[random];
+        },2500);
+      </script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+  </body>
+</html>
